@@ -1,0 +1,1482 @@
+Wed Oct 29 05:34:20 2003
+*Error in loading object '/global/personaje/atributos'
+Objeto: /kernel/login - Linea: 329
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 329
+#2: Funcion 'CATCH' en Objeto: /kernel/login - Linea: 329
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/kernel/login.c",
+  "error" : "*Error in loading object '/global/personaje/atributos'
+",
+  "trace" : ({ /* sizeof() == 3 */
+      ([ /* sizeof() == 6 */
+        "arguments" : ({ /* sizeof() == 1 */
+            "xxxxxxxxxxxxxxxxï"
+          }),
+        "program" : "/kernel/login.c",
+        "function" : "check_password",
+        "line" : 125,
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "program" : "/kernel/login.c",
+        "function" : "load_user",
+        "line" : 329,
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/kernel/login.c",
+        "function" : "CATCH",
+        "line" : 329,
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+      ])
+    }),
+  "line" : 329,
+  "file" : "/kernel/login.c",
+  "object" : /kernel/login#3 ("/kernel/login"),
+])
+
+******************
+Wed Oct 29 12:49:40 2003
+*Error in loading object '/global/mensajes'
+Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 340
+#2: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#3: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#4: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#5: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Linea: 57
+#6: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Programa: /global/jugador.c - Linea: 74
+#7: Funcion 'cargar_raza' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 13
+#8: Funcion 'encarnar' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 38
+#9: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#10: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#11: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#12: Funcion 'cambiar_forma' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#13: Funcion 'CATCH' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/global/personaje/cuerpo.c",
+  "file" : "/global/personaje/cuerpo.c",
+  "trace" : ({ /* sizeof() == 14 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "line" : 340,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/login#3 ("/kernel/login"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cargar_ficha",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/login#3 ("/kernel/login"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "program" : "/kernel/inmortal.c",
+        "file" : "/kernel/inmortal.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 57,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            1,
+            0
+          }),
+        "program" : "/global/jugador.c",
+        "file" : "/global/jugador.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 74,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/raza.c",
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 13,
+        "function" : "cargar_raza",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            /razas/humano ("/razas/humano")
+          }),
+        "program" : "/global/personaje/raza.c",
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ /* sizeof() == 1 */
+            "/razas/humano.c"
+          }),
+        "line" : 38,
+        "function" : "encarnar",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cambiar_forma",
+            "humanoide",
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ /* sizeof() == 1 */
+            "humanoide"
+          }),
+        "line" : 42,
+        "function" : "cambiar_forma",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/inmortal#4 ("cain"),
+  "error" : "*Error in loading object '/global/mensajes'
+",
+  "line" : 42,
+])
+
+******************
+Wed Oct 29 12:50:16 2003
+*Error in loading object '/global/mensajes'
+Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 340
+#2: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#3: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#4: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#5: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Linea: 57
+#6: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Programa: /global/jugador.c - Linea: 74
+#7: Funcion 'cargar_raza' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 13
+#8: Funcion 'encarnar' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 38
+#9: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#10: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#11: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#12: Funcion 'cambiar_forma' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#13: Funcion 'CATCH' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/global/personaje/cuerpo.c",
+  "file" : "/global/personaje/cuerpo.c",
+  "trace" : ({ /* sizeof() == 14 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "line" : 340,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/login#3 ("/kernel/login"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cargar_ficha",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/login#3 ("/kernel/login"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "program" : "/kernel/inmortal.c",
+        "file" : "/kernel/inmortal.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 57,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            1,
+            0
+          }),
+        "program" : "/global/jugador.c",
+        "file" : "/global/jugador.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 74,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/raza.c",
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ }),
+        "line" : 13,
+        "function" : "cargar_raza",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            /razas/humano ("/razas/humano")
+          }),
+        "program" : "/global/personaje/raza.c",
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ /* sizeof() == 1 */
+            "/razas/humano.c"
+          }),
+        "line" : 38,
+        "function" : "encarnar",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cambiar_forma",
+            "humanoide",
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "arguments" : ({ /* sizeof() == 1 */
+            "humanoide"
+          }),
+        "line" : 42,
+        "function" : "cambiar_forma",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/inmortal#4 ("cain"),
+  "error" : "*Error in loading object '/global/mensajes'
+",
+  "line" : 42,
+])
+
+******************
+Wed Oct 29 13:36:52 2003
+*Error in loading object '/formas/humanoide'
+Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 340
+#2: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#3: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#4: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#5: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Linea: 57
+#6: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Programa: /global/jugador.c - Linea: 74
+#7: Funcion 'cargar_raza' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 13
+#8: Funcion 'encarnar' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 38
+#9: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#10: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#11: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#12: Funcion 'cambiar_forma' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#13: Funcion 'CATCH' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/global/personaje/cuerpo.c",
+  "file" : "/global/personaje/cuerpo.c",
+  "trace" : ({ /* sizeof() == 14 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "line" : 340,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cargar_ficha",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/login#3 ("/kernel/login"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/login#3 ("/kernel/login"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/inmortal.c",
+        "arguments" : ({ }),
+        "file" : "/kernel/inmortal.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "line" : 57,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/global/jugador.c",
+        "arguments" : ({ }),
+        "file" : "/global/jugador.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 2 */
+            1,
+            0
+          }),
+        "line" : 74,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 13,
+        "function" : "cargar_raza",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "/razas/humano.c"
+          }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 1 */
+            /razas/humano ("/razas/humano")
+          }),
+        "line" : 38,
+        "function" : "encarnar",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cambiar_forma",
+            "humanoide",
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/cuerpo.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "humanoide"
+          }),
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "cambiar_forma",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/inmortal#4 ("cain"),
+  "error" : "*Error in loading object '/formas/humanoide'
+",
+  "line" : 42,
+])
+
+******************
+Wed Oct 29 14:32:04 2003
+*Error in loading object '/formas/humanoide'
+Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 340
+#2: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#3: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#4: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#5: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Linea: 57
+#6: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Programa: /global/jugador.c - Linea: 74
+#7: Funcion 'cargar_raza' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 13
+#8: Funcion 'encarnar' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 38
+#9: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#10: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#11: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#12: Funcion 'cambiar_forma' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#13: Funcion 'CATCH' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/global/personaje/cuerpo.c",
+  "file" : "/global/personaje/cuerpo.c",
+  "trace" : ({ /* sizeof() == 14 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "line" : 340,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cargar_ficha",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/login#3 ("/kernel/login"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/login#3 ("/kernel/login"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/inmortal.c",
+        "arguments" : ({ }),
+        "file" : "/kernel/inmortal.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "line" : 57,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/global/jugador.c",
+        "arguments" : ({ }),
+        "file" : "/global/jugador.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 2 */
+            1,
+            0
+          }),
+        "line" : 74,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 13,
+        "function" : "cargar_raza",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "/razas/humano.c"
+          }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "locals" : ({ /* sizeof() == 1 */
+            /razas/humano ("/razas/humano")
+          }),
+        "line" : 38,
+        "function" : "encarnar",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cambiar_forma",
+            "humanoide",
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/cuerpo.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "humanoide"
+          }),
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "cambiar_forma",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/inmortal#4 ("cain"),
+  "error" : "*Error in loading object '/formas/humanoide'
+",
+  "line" : 42,
+])
+
+******************
+Wed Oct 29 14:32:26 2003
+*Error in loading object '/global/mensajes'
+Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 340
+#2: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#3: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#4: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#5: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Linea: 57
+#6: Funcion 'cargar_ficha' en Objeto: /kernel/inmortal - Programa: /global/jugador.c - Linea: 74
+#7: Funcion 'cargar_raza' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 13
+#8: Funcion 'encarnar' en Objeto: /kernel/inmortal - Programa: /global/personaje/raza.c - Linea: 38
+#9: Funcion 'call_other' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/call_other.c - Linea: 17
+#10: Funcion 'protected_call' en Objeto: /kernel/daemons/caller - Linea: 13
+#11: Funcion 'unguarded_call' en Objeto: /kernel/simul_efun - Fichero: /kernel/simul_efun/security/unguarded_call.c - Linea: 10
+#12: Funcion 'cambiar_forma' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+#13: Funcion 'CATCH' en Objeto: /kernel/inmortal - Programa: /global/personaje/cuerpo.c - Linea: 42
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/global/personaje/cuerpo.c",
+  "file" : "/global/personaje/cuerpo.c",
+  "trace" : ({ /* sizeof() == 14 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "program" : "/kernel/login.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "line" : 340,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/login#3 ("/kernel/login"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cargar_ficha",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/login#3 ("/kernel/login"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cargar_ficha",
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "program" : "/kernel/inmortal.c",
+        "arguments" : ({ }),
+        "file" : "/kernel/inmortal.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 57,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            1,
+            0
+          }),
+        "program" : "/global/jugador.c",
+        "arguments" : ({ }),
+        "file" : "/global/jugador.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 74,
+        "function" : "cargar_ficha",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 13,
+        "function" : "cargar_raza",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 1 */
+            /razas/humano ("/razas/humano")
+          }),
+        "program" : "/global/personaje/raza.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "/razas/humano.c"
+          }),
+        "file" : "/global/personaje/raza.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 38,
+        "function" : "encarnar",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            "cambiar_forma",
+            "humanoide",
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/simul_efun/security/call_other.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 17,
+        "function" : "call_other",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 5 */
+            0,
+            1,
+            0,
+            0,
+            0
+          }),
+        "program" : "/kernel/daemons/caller.c",
+        "arguments" : ({ /* sizeof() == 8 */
+            /kernel/inmortal#4 ("cain"),
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            }),
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "file" : "/kernel/daemons/caller.c",
+        "object" : /kernel/daemons/caller ("/kernel/daemons/caller"),
+        "line" : 13,
+        "function" : "protected_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/simul_efun.c",
+        "arguments" : ({ /* sizeof() == 2 */
+            /kernel/inmortal#4 ("cain"),
+            ({ /* sizeof() == 7 */
+              "cambiar_forma",
+              "humanoide",
+              0,
+              0,
+              0,
+              0,
+              0
+            })
+          }),
+        "file" : "/kernel/simul_efun/security/unguarded_call.c",
+        "object" : /kernel/simul_efun ("/kernel/simul_efun"),
+        "line" : 10,
+        "function" : "unguarded_call",
+      ]),
+      ([ /* sizeof() == 6 */
+        "program" : "/global/personaje/cuerpo.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            "humanoide"
+          }),
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "cambiar_forma",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/global/personaje/cuerpo.c",
+        "file" : "/global/personaje/cuerpo.c",
+        "object" : /kernel/inmortal#4 ("cain"),
+        "line" : 42,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/inmortal#4 ("cain"),
+  "error" : "*Error in loading object '/global/mensajes'
+",
+  "line" : 42,
+])
+
+******************
+Wed Oct 29 16:07:42 2003
+*Error in loading object '/global/personaje/cuerpo'
+Objeto: /kernel/login - Linea: 329
+#0: Funcion 'check_password' en Objeto: /kernel/login - Linea: 125
+#1: Funcion 'load_user' en Objeto: /kernel/login - Linea: 329
+#2: Funcion 'CATCH' en Objeto: /kernel/login - Linea: 329
+
+-- Context --
+([ /* sizeof() == 6 */
+  "program" : "/kernel/login.c",
+  "file" : "/kernel/login.c",
+  "trace" : ({ /* sizeof() == 3 */
+      ([ /* sizeof() == 6 */
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            "xxxxxxxxxxxxxxxx<i"
+          }),
+        "line" : 125,
+        "function" : "check_password",
+      ]),
+      ([ /* sizeof() == 7 */
+        "program" : "/kernel/login.c",
+        "locals" : ({ /* sizeof() == 2 */
+            "/kernel/inmortal",
+            0
+          }),
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "line" : 329,
+        "function" : "load_user",
+      ]),
+      ([ /* sizeof() == 5 */
+        "program" : "/kernel/login.c",
+        "file" : "/kernel/login.c",
+        "object" : /kernel/login#3 ("/kernel/login"),
+        "line" : 329,
+        "function" : "CATCH",
+      ])
+    }),
+  "object" : /kernel/login#3 ("/kernel/login"),
+  "error" : "*Error in loading object '/global/personaje/cuerpo'
+",
+  "line" : 329,
+])
+
+******************

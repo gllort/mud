@@ -1,0 +1,2 @@
+ -lresolv -lbsd -lcrypt -ldl -lnsl -lm -lmysqlclient -L/usr/lib/mysql -lmysqld -lpthread -ldb_tcl -lssl
+

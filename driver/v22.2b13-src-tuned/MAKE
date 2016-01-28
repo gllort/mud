@@ -1,0 +1,8 @@
+!#
+make clean
+build.MudOS
+gmake
+gmake install
+mv ../bin/* ../../mud/driver/
+rmdir ../bin
+

@@ -1,0 +1,43 @@
+----------------------------------------------------------------------------
+Mundo Oscuro (MudOS v22.2b13) starting up on Linux - Wed Oct 29 16:08:03 2003
+
+
+Connected to address server on localhost port 9997
+/kernel/simul_efun/filesystem/explore_path.c line 27: Warning: Unused local variable 'final' before the end of line
+/kernel/simul_efun/security/call_other.c line 70: Warning: /* found in comment. before     funargs = (mixed
+/kernel/valid.c line 8: Warning: Unused local variable 'file' before the end of line
+/kernel/valid.c line 18: Warning: Unused local variable 'file' before the end of line
+/kernel/valid.c line 23: Warning: Unused local variable 'ob' before the end of line
+/kernel/valid.c line 27: Warning: Unused local variable 'from' before the end of line
+/kernel/valid.c line 27: Warning: Unused local variable 'to' before the end of line
+/kernel/valid.c line 31: Warning: Unused local variable 'ob' before the end of line
+/kernel/valid.c line 40: Warning: Unused local variable 'efun_name' before the end of line
+/kernel/valid.c line 44: Warning: Unused local variable 'file' before the end of line
+/kernel/valid.c line 48: Warning: Unused local variable 'ob' before the end of line
+/kernel/valid.c line 48: Warning: Unused local variable 'euid' before the end of line
+/kernel/valid.c line 52: Warning: Unused local variable 'eff_user' before the end of line
+/kernel/valid.c line 52: Warning: Unused local variable 'fun' before the end of line
+/kernel/valid.c line 52: Warning: Unused local variable 'info' before the end of line
+/kernel/valid.c line 56: Warning: Unused local variable 'ob' before the end of line
+/kernel/valid.c line 92: Warning: Unused local variable 'user' before the end of line
+/kernel/valid.c line 111: Warning: Unused local variable 'user' before the end of line
+/kernel/valid.c line 111: Warning: Unused local variable 'func' before the end of line
+/kernel/valid.c line 115: Warning: Unused local variable 'ob' before the end of line
+/kernel/valid.c line 115: Warning: Unused local variable 'action' before the end of line
+/kernel/valid.c line 115: Warning: Unused local variable 'info' before the end of line
+/kernel/master.c line 25: Warning: Unused local variable 'path' before the end of line
+/kernel/master.c line 81: Warning: Unused local variable 'trace' before the end of line
+/kernel/master.c line 88: Warning: Unused local variable 'file' before the end of line
+/kernel/master.c line 95: Warning: Unused local variable 'message' before the end of line
+/kernel/master.c line 95: Warning: Unused local variable 'cmd_giver' before the end of line
+/kernel/master.c line 95: Warning: Unused local variable 'current_obj' before the end of line
+/kernel/master.c line 99: Warning: Unused local variable 'load_empty' before the end of line
+
+Loading preloaded files ...
+Initializations complete.
+
+Accepting connections on port 4000.
+Accepting connections on port 4001.
+******** FATAL ERROR: Process interrupted
+MudOS driver attempting to exit gracefully.
+crash() in master called successfully.  Aborting.
